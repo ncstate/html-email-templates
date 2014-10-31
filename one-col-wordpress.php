@@ -1,3 +1,5 @@
+<?php while(have_rows('one_column_ncstate')): the_row(); ?>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
@@ -75,6 +77,11 @@ div[class="body"] p[class="copy"] {
 	margin: 0;
 }
 
+div[class="body"] p[class="copy"] a {
+	color: #cc0000;
+	text-decoration: none;
+}
+
 div[class="body"] p[class="copy"] a[class="call-to-action"] {
 	color: #cc0000;
 	font-weight: bold;
@@ -140,23 +147,25 @@ div[class="footer"] p[class="social"] a {
 	<tr style="margin, padding: 0;">
 		<td style="margin, padding: 0;">
 			<div class="headline" style="width: 80%;padding: 0 2% 2% 10%;">
-				<p class="date" style="color: #cc0000;font-size: 1.2em;margin: 0;"><span block="1" key="date" description="Date or Subtitle" name="Date or Subtitle" display="plain">Oct. 15, 2014</span></p>
-				<h1 class="headline" style="margin: 0;font-size: 2.2em;"><span block="1" key="title" description="Title" name="Title" display="plain">Read NC State News</span></h1>
+				<p class="date" style="color: #cc0000;font-size: 1.2em;margin: 0;"><?php echo get_sub_field('subtitle'); ?></p>
+				<h1 class="headline" style="margin: 0;font-size: 2.2em;"><?php echo get_sub_field('title'); ?></h1>
 			</div>
 		</td>
 	</tr>
 	<tr style="margin, padding: 0;">
 		<td style="margin, padding: 0;">
 			<div class="lead_image" style="width: 100%;">
-				<span block="1" key="image" description="Image" name="Image" display="image"><img src="http://placehold.it/600x400" alt="Belltower Image" style="width: 100%;"></span>
+				<?php $image = get_sub_field('image'); ?>
+				<?php if($image): ?>
+					<img src="&lt;?php echo $image['url']; ?&gt;" alt="&lt;?php //echo $image['alt']; ?&gt;" style="width: 100%;">
+				<?php endif; ?>
 			</div>
 		</td>
 	</tr>
 	<tr style="margin, padding: 0;">
 		<td style="margin, padding: 0;">
 			<div class="body" style="width: 80%;padding: 5% 10% 3% 10%;line-height: 130%;">
-				<p class="copy" style="margin: 0;"><span block="1" key="body" description="Body Copy" name="Body Copy" display="plainlarge">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at varius dui. Morbi porta lacus eu turpis consequat, ac efficitur mi hendrerit. Pellentesque ultricies euismod nulla non eleifend. Donec dapibus blandit orci ac fermentum. Mauris placerat turpis id augue aliquet auctor.<br><br>Phasellus ultrices tellus id dolor commodo porta. Vestibulum vel euismod erat, a suscipit mauris. Aliquam erat volutpat. Fusce id enim metus. Nam laoreet ex massa, ac consectetur ex auctor a.<br><br>Curabitur mattis tortor quis ornare ultrices.</span></p>
-				<p class="copy" style="margin: 0;"><span block="1" key="cta" description="Call to Action" name="Call to Action" display="link"><a href="http://news.ncsu.edu/" class="call-to-action" style="color: #cc0000;font-weight: bold;font-size: 1.5em;text-decoration: none;line-height: 3em;">Read Now&raquo;</a></span></p>
+				<p class="copy" style="margin: 0;"><?php echo get_sub_field('body'); ?></p>
 			</div>
 		</td>
 	</tr>
@@ -183,3 +192,4 @@ div[class="footer"] p[class="social"] a {
 
 </body>
 </html>
+<?php endwhile; ?>
