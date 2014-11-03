@@ -32,6 +32,7 @@ table[class="wrapper"] {
 div[class="header"] {
 	background-color: #333;
 	height: 30px;
+	max-height: 30px;
 	width: 100%;
 	margin-bottom: 45px;
 }
@@ -39,6 +40,7 @@ div[class="header"] {
 div[class="header"] img {
 	margin-left: 10%;
 	height: 60px;
+	width: 125px;
 }
 
 div[class="headline"] {
@@ -139,8 +141,8 @@ div[class="footer"] p[class="social"] a {
 <table class="wrapper" cellpadding="0" cellspacing="0" style="width: 600px;margin: auto;padding: 0;font-size: 14px;border: 1px solid #333;">
 	<tr style="margin, padding: 0;">
 		<td style="margin, padding: 0;">
-			<div class="header" style="background-color: #333;height: 30px;width: 100%;margin-bottom: 45px;">
-				<img src="https://cdn.ncsu.edu/brand-assets/email-resources/brick-250x120.jpg" alt="NC State University" style="margin-left: 10%;height: 60px;">
+			<div class="header" style="background-color: #333;height: 30px;max-height: 30px;width: 100%;margin-bottom: 45px;">
+				<img src="https://cdn.ncsu.edu/brand-assets/email-resources/brick-250x120.jpg" alt="NC State University" style="margin-left: 10%;height: 60px;width: 125px;">
 			</div>
 		</td>
 	</tr>
@@ -157,7 +159,7 @@ div[class="footer"] p[class="social"] a {
 			<div class="lead_image" style="width: 100%;">
 				<?php $image = get_sub_field('image'); ?>
 				<?php if($image): ?>
-					<img src="&lt;?php echo $image['url']; ?&gt;" alt="&lt;?php //echo $image['alt']; ?&gt;" style="width: 100%;">
+					<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" style="width: 100%;">
 				<?php endif; ?>
 			</div>
 		</td>
