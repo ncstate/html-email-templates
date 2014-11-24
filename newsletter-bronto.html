@@ -7,166 +7,169 @@
 </head>
 
 <body bgcolor="#FFFFFF" topmargin="0" marginheight="0" style="font-family: arial,sans-serif;margin: 0;padding: 0;">
-<style type="text/css">
+	<style type="text/css">
 
-body {
-	margin: 0;
-	padding: 0;
-	font-family: arial, sans-serif !important;
-}
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: arial, sans-serif !important;
+	}
 
-tr, td {
-	margin, padding: 0;
-}
-
-table[class="wrapper"] {
-	width: 600px;
-	margin: auto;
-	padding: 0;
-	font-size: 14px;
-	border: 1px solid #333;
-}
-
-div[class="header"] {
-	background-color: #333;
-	height: 30px;
-	width: 100%;
-	margin-bottom: 45px;
-}
-
-div[class="header"] img {
-	margin-left: 10%;
-	height: 60px;
-}
-
-div[class="title"] {
-	width: 90%;
-	margin: 0 5%;
-}
-
-div[class="title"] h1 {
-	text-align: center;
-	text-transform: uppercase;
-	font-size: 1.6em;
-}
-
-div[class="date"] {
-	width: 90%;
-	padding: 2% 0 0 5%;
-}
-
-div[class="date"] p {
-	color: #cc0000;
-	font-size: 1.2em;
-	margin: 0;
-}
-
-div[class="news_story"] {
-	/*border-top: 3px solid #000;*/
-	width: 90%;
-	padding: 0 10% 0 0;
-	line-height: 130%;
-	clear: both;
-}
-
-div[class="news_story"] img {
-	float: left;
-	width: 25%;
-	max-width: 150px;
-	padding: 3% 5% 0 5%;
-}
-
-div[class="news_story"] div[class="story_teaser"] {
-	float: left;
-	width: 65%;
-	margin: 0 0 7% 0;
-}
-
-div[class="news_story"] div[class="story_teaser"] h2 {
-	margin: 3% 0 3% 0;
-	line-height: 1.3em;
-	font-size: 1.5em;
-}
-
-div[class="news_story"] div[class="story_teaser"] p {
-	margin: 0;
-	clear: both;
-}
-
-div[class="news_story"] div[class="story_teaser"] a {
-	color: #cc0000;
-	text-decoration: none;
-}
-
-div[class="call-to-action"] {
-	width: 90%;
-	padding: 1% 0 2% 5%;
-	clear: both;
-}
-
-div[class="call-to-action"] p a {
-	color: #cc0000;
-	text-decoration: none;
-	font-weight: bold;
-	font-size: 1.3em;
-	margin: 0;
-}
-
-div[class="footer"] {
-	width: 100%;
-	background-color: #cc0000;
-	color: #fff;
-	text-align: center;
-	font-size: 0.9em;
-	padding: 1em 0 2em 0;
-}
-
-div[class="footer"] a {
-	color: #fff;
-}
-
-div[class="footer"] p[class="social"] {
-	margin: 0;
-	font-size: 0.9em;
-	font-weight: bold;
-}
-
-div[class="footer"] p[class="social"] a {
-	text-decoration: none;
-}
-
-@media only screen and (max-device-width: 675px) {
+	tr, td {
+		margin, padding: 0;
+	}
 
 	table[class="wrapper"] {
-		width: 100% !important;
+		width: 600px;
+		margin: auto;
+		padding: 0;
+		font-size: 14px;
+		border: 1px solid #333;
 	}
-	
+
+	div[class="header"] {
+		background-color: #333;
+		height: 30px;
+		max-height: 30px;
+		width: 100%;
+		margin-bottom: 45px;
+	}
+
 	div[class="header"] img {
-		margin-left: 2em !important;
+		margin-left: 10%;
+		height: 60px;
+		width: 125px;
 	}
-	
+
+	div[class="title"] {
+		width: 90%;
+		margin: 0 5%;
+	}
+
+	div[class="title"] h1 {
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.6em;
+	}
+
+	div[class="date"] {
+		width: 90%;
+		padding: 2% 0 0 5%;
+	}
+
+	div[class="date"] p {
+		color: #cc0000;
+		font-size: 1.2em;
+		margin: 0;
+	}
+
+	div[class="news_story"] {
+		/*border-top: 3px solid #000;*/
+		width: 90%;
+		padding: 0 10% 0 0;
+		line-height: 130%;
+		clear: both;
+	}
+
 	div[class="news_story"] img {
-		width: 100% !important;
-		max-width: none !important;
+		float: left;
+		width: 25%;
+		max-width: 150px;
+		padding: 3% 0 0 5%;
 	}
 
 	div[class="news_story"] div[class="story_teaser"] {
-		width: 90% !important;
-		padding: 0 0 0 5% !important;
+		float: left;
+		width: 65%;
+		margin: 0 0 7% 5%;
 	}
-	
+
 	div[class="news_story"] div[class="story_teaser"] h2 {
-		font-size: 1.8em !important;
+		margin: 3% 0 3% 0;
+		line-height: 1.3em;
+		font-size: 1.5em;
 	}
+
+	div[class="news_story"] div[class="story_teaser"] p {
+		margin: 0;
+		clear: both;
+	}
+
+	div[class="news_story"] div[class="story_teaser"] a {
+		color: #cc0000;
+		text-decoration: none;
+	}
+
+	div[class="call-to-action"] {
+		width: 90%;
+		padding: 1% 0 2% 5%;
+		clear: both;
+	}
+
+	div[class="call-to-action"] p a {
+		color: #cc0000;
+		text-decoration: none;
+		font-weight: bold;
+		font-size: 1.3em;
+		margin: 0;
+	}
+
+	div[class="footer"] {
+		width: 100%;
+		background-color: #cc0000;
+		color: #fff;
+		text-align: center;
+		font-size: 0.8em;
+		padding: 1em 0 2em 0;
+	}
+
+	div[class="footer"] a {
+		color: #fff;
+	}
+
+	div[class="footer"] p[class="social"] {
+		margin: 0;
+		font-size: 0.8em;
+		font-weight: bold;
+	}
+
+	div[class="footer"] p[class="social"] a {
+		text-decoration: none;
+	}
+
+	@media only screen and (max-device-width: 675px) {
+
+		table[class="wrapper"] {
+			width: 100% !important;
+		}
 	
-	div[class="news_story"] p[class="copy"] {
-		font-size: 1.3em !important;
-		line-height: 140% !important;
+		div[class="header"] img {
+			margin-left: 2em !important;
+		}
+	
+		div[class="news_story"] img {
+			width: 100% !important;
+			max-width: 150px !important;
+		}
+
+		div[class="news_story"] div[class="story_teaser"] {
+			width: 90% !important;
+			padding: 0 0 0 5% !important;
+			margin-left: 0 !important;
+		}
+	
+		div[class="news_story"] div[class="story_teaser"] h2 {
+			font-size: 1.8em !important;
+		}
+	
+		div[class="news_story"] p[class="copy"] {
+			font-size: 1.3em !important;
+			line-height: 140% !important;
+		}
+
 	}
 
-}
-
-</style>
+	</style>
 
 <table class="wrapper" cellpadding="0" cellspacing="0" style="width: 600px;margin: auto;padding: 0;font-size: 14px;border: 1px solid #333;">
 	<tr style="margin, padding: 0;">
@@ -203,11 +206,11 @@ div[class="footer"] p[class="social"] a {
 	</tr>
 	<tr style="margin, padding: 0;">
 		<td style="margin, padding: 0;">
-			<div class="footer" style="width: 100%;background-color: #cc0000;color: #fff;text-align: center;font-size: 0.9em;padding: 1em 0 2em 0;">
+			<div class="footer" style="width: 100%;background-color: #cc0000;color: #fff;text-align: center;font-size: 0.8em;padding: 1em 0 2em 0;">
 				<p>%%!account_address%%</p>
 				<p>This message was sent to %%!contact_email%%</p>
 				<p><a href="%%!manage_url%%" style="color: #fff;">Manage Preferences</a> | <a href="%%!forward_url%%" style="color: #fff;">Forward to a Friend</a></p>
-				<p class="social" style="margin: 0;font-size: 0.9em;font-weight: bold;">
+				<p class="social" style="margin: 0;font-size: 0.8em;font-weight: bold;">
 					<a href="https://www.facebook.com/ncstate" style="color: #fff;text-decoration: none;"><img src="http://www.ncsu.edu/university-communications/emails/park/facebook.jpg" width="24" height="20" border="0"></a>
 					<a href="https://www.facebook.com/ncstate" style="color: #fff;text-decoration: none;">Like NC&nbsp;State on Facebook</a>
 					<span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
