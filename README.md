@@ -8,6 +8,7 @@ Available Templates
 
 * Announcement with image and call-to-action (HTML and Bronto)
 * Newsletter (HTML and Bronto)
+* Announcement with centered NC State Brick (HTML and Bronto)
 
 Things to Remember
 ----
@@ -21,4 +22,4 @@ Here are several things to keep in mind while authoring an email:
 Inlining the CSS
 ----
 
-For ease of editing, the CSS styles have not been inlined.  This is necessary before sending to ensure better email client compatibility. You can use services such as MailChimp's inliner: http://templates.mailchimp.com/resources/inline-css/
+For ease of editing, the CSS styles have not been inlined on non-Bronto templates.  This is necessary before sending to ensure better email client compatibility. You can use services such as MailChimp's inliner: http://templates.mailchimp.com/resources/inline-css/
